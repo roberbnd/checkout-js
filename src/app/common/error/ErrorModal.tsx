@@ -8,7 +8,6 @@ import { IconError, IconSize } from '../../ui/icon';
 import { Modal, ModalHeader } from '../../ui/modal';
 
 import computeErrorCode from './computeErrorCode';
-import isCustomError from './isCustomError';
 import isRequestError from './isRequestError';
 import ErrorCode from './ErrorCode';
 
@@ -43,8 +42,7 @@ export default class ErrorModal extends PureComponent<ErrorModalProps> {
 
     private renderHeader(): ReactNode {
         const {
-            error,
-            title = error && isCustomError(error) && error.title,
+            title = '',
         } = this.props;
 
         return (
