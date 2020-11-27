@@ -11,7 +11,6 @@ interface FooContextProps {
 describe('createInjectHoc()', () => {
     let contextValue: FooContextProps;
     let FooContext: Context<FooContextProps>;
-
     beforeEach(() => {
         contextValue = {
             count: 123,
@@ -25,6 +24,7 @@ describe('createInjectHoc()', () => {
         const withFoo = createInjectHoc(FooContext);
         const Inner = () => <div />;
         const Outer = withFoo(Inner);
+        const a = 'a';
 
         expect(mount(<Outer />).find(Inner).props())
             .toEqual(contextValue);
