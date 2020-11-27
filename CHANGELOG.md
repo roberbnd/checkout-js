@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.103.1-alpha.1606496961099](https://github.com/bigcommerce/checkout-js/compare/v1.103.0...v1.103.1-alpha.1606496961099) (2020-11-27)
+
+
+### Bug Fixes
+
+* **common:** CHECKOUT-5332 Only send in-app errors to Sentry ([213bcae](https://github.com/bigcommerce/checkout-js/commit/213bcaed6d9ab171e9ed61c5b5b98a2f39eb9d8e))
+* **common:** CHECKOUT-5332 Upgrade Sentry client ([adf20eb](https://github.com/bigcommerce/checkout-js/commit/adf20eb46193edd02e66b9f128b47ba8123d41c5))
+
 ## [1.103.0](https://github.com/bigcommerce/checkout-js/compare/v1.102.0...v1.103.0) (2020-11-13)
 
 
